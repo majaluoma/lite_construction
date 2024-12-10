@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/body.css" />
+        <link rel="stylesheet" href="../styles/header_footer.css" />
+        <link rel="stylesheet" href="../styles/site_content.css" />
+        <title>Lite Construction</title>
+    </head>
+    <body>
+        <header class="secondary header">
+            <h1>Redirect a site</h1>
+            <div class="secondary navigation">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./redirect.html">Redirect!</a>
+            </div>
+        </header>
+        <div class="site_content_main">
+            <div class="site_content">
+                <h2>Provide information about the redirect:</h2>
+                <form action="./custom_redirect.html/" method="get" target="_blank">
+                    <label for="template">Template:</label>
+                    <select name="template" id="template" required>
+                        <option value="basicTemplate">Basic Template</option>
+                        <option value="advancedTemplate" disabled>Coming soon...</option>
+                    </select>
+                    <br /><br />
+
+                    <label for="title">Title:</label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="Site under construction"
+                        required
+                    />
+                    <br /><br />
+
+                    <label for="subtitle">Subtitle:</label>
+                    <input
+                        type="text"
+                        id="subtitle"
+                        name="subtitle"
+                        placeholder="Be back soon"
+                        required
+                    />
+                    <br /><br />
+
+                    <h2>Customize Colors</h2>
+                    <label for="fontColor">Font Color:</label>
+                    <input type="color" id="fontColor" name="fontColor" value="#333333" />
+
+                    <label for="secondaryColor">Secondary Color:</label>
+                    <input type="color" id="secondaryColor" name="secondaryColor" value="#0077cc" />
+
+                    <label for="bgColor">Background Color:</label>
+                    <input type="color" id="bgColor" name="bgColor" value="#f9f9f9" />
+
+                    <button type="submit">Generate Redirect</button>
+                </form>
+            </div>
+        </div>
+        <footer class="secondary footer">
+            <p>Lite Construction, are rights reserved</p>
+            <div class="secondary navigation">
+                <div class="secondary navigation">
+                    <a href="../index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./redirect.html">Redirect!</a>
+                    <a href="./contact.html">Contact us</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

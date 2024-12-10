@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maintenance Page</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background-color: var(--bg-color, #f9f9f9);
+                color: var(--font-color, #333);
+                text-align: center;
+                padding: 2rem;
+            }
+            h1 {
+                color: var(--secondary-color, #0077cc);
+                font-size: 2.5em;
+                margin-top: 0;
+            }
+            h2 {
+                color: var(--secondary-color, #0077cc);
+                font-size: 1.5em;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-size: 1.2em;
+                margin-top: 1.5rem;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">We’ll Be Back Soon!</h1>
+            <h2 id="subtitle">Our website is currently under construction.</h2>
+            <p>Thank you for your patience. We are working hard to improve the site!</p>
+        </div>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+
+            const title = params.get("title") || "We’ll Be Back Soon!";
+            const subtitle =
+                params.get("subtitle") || "Our website is currently under construction.";
+
+            document.getElementById("title").innerText = title;
+            document.getElementById("subtitle").innerText = subtitle;
+
+            const fontColor = params.get("fontColor");
+            const secondaryColor = params.get("secondaryColor");
+            const bgColor = params.get("bgColor");
+
+            if (fontColor) {
+                document.body.style.setProperty("--font-color", fontColor);
+            }
+            if (secondaryColor) {
+                document.body.style.setProperty("--secondary-color", secondaryColor);
+            }
+            if (bgColor) {
+                document.body.style.setProperty("--bg-color", bgColor);
+            }
+        </script>
+    </body>
+</html>
