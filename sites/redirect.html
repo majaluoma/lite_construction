@@ -3,9 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Easy and fast redirection tool to redirect your site when it is under construction">
-        <meta name="keywords" content="redirect no-code no coding site under construction under maintanance coming soon">
-        <link rel="stylesheet" href="../styles/body.css?v=1.0.1"/>
+        <meta
+            name="description"
+            content="Easy and fast redirection tool to redirect your site when it is under construction"
+        />
+        <meta
+            name="keywords"
+            content="redirect no-code no coding site under construction under maintanance coming soon"
+        />
+        <link rel="stylesheet" href="../styles/body.css?v=1.0.1" />
         <link rel="stylesheet" href="../styles/header_footer.css?v=1.0.1" />
         <link rel="stylesheet" href="../styles/site_content.css?v=1.0.1" />
         <title>Lite Construction</title>
@@ -23,43 +29,55 @@
             <div class="site_content">
                 <h2>Provide information about the redirect:</h2>
                 <form action="./custom_redirect.html" method="get" target="_blank">
-                    <label for="template">Template:</label>
-                    <select name="template" id="template" required>
-                        <option value="basicTemplate">Basic Template</option>
-                        <option value="advancedTemplate" disabled>Coming soon...</option>
-                    </select>
+                    <div class="input_pair">
+                        <label for="template">Template:</label>
+                        <select name="template" id="template" required>
+                            <option value="basicTemplate">Basic Template</option>
+                            <option value="advancedTemplate" disabled>Coming soon...</option>
+                        </select>
+                    </div>
                     <br /><br />
-
-                    <label for="title">Title:</label>
-                    <input
-                        type="text"
-                        id="title"
-                        name="title"
-                        placeholder="Site under construction"
-                        required
-                    />
+                    <div class="input_pair">
+                        <label for="title">Title:</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Site under construction"
+                            required
+                        />
+                    </div>
                     <br /><br />
-
-                    <label for="subtitle">Subtitle:</label>
-                    <input
-                        type="text"
-                        id="subtitle"
-                        name="subtitle"
-                        placeholder="Be back soon"
-                        required
-                    />
-                    <br /><br />
-
+                    <div class="input_pair">
+                        <label for="subtitle">Subtitle:</label>
+                        <input
+                            type="text"
+                            id="subtitle"
+                            name="subtitle"
+                            placeholder="Be back soon"
+                            required
+                        />
+                    </div>
+                    <br /><br /><br />
                     <h2>Customize Colors</h2>
-                    <label for="fontColor">Font Color:</label>
-                    <input type="color" id="fontColor" name="fontColor" value="#333333" />
-
-                    <label for="secondaryColor">Secondary Color:</label>
-                    <input type="color" id="secondaryColor" name="secondaryColor" value="#0077cc" />
-
-                    <label for="bgColor">Background Color:</label>
-                    <input type="color" id="bgColor" name="bgColor" value="#f9f9f9" />
-
+                    <div class="input_pair">
+                        <label for="fontColor">Font Color:</label>
+                        <input type="color" id="fontColor" name="fontColor" value="#333333" />
+                    </div>
+                    <div class="input_pair">
+                        <label for="secondaryColor">Secondary Color:</label>
+                        <input
+                            type="color"
+                            id="secondaryColor"
+                            name="secondaryColor"
+                            value="#0077cc"
+                        />
+                    </div>
+                    <div class="input_pair">
+                        <label for="bgColor">Background Color:</label>
+                        <input type="color" id="bgColor" name="bgColor" value="#f9f9f9" />
+                    </div>
+                    <br /><br /><br />
                     <button type="submit">Generate Redirect</button>
                 </form>
             </div>
