@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    size: 12;
+    font-size: 12;
     background-color: #E6F2FF;
     color: #333333;
     display: flex;
@@ -17,17 +17,17 @@ body {
 }
 
 h1 {
-    size: 3em;
+    font-size: 3em;
 }
 
 h2, h3, h4, h5 {
-    size: 2em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 p {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
 }
 
 a {
@@ -46,13 +46,13 @@ img {
 
 label {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
     margin-right: 0.5em;
 }
 
 input {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
     border-radius: 0%;
     border: none;
     height: 2em;
@@ -62,7 +62,7 @@ input {
 
 select {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
     padding: 1em;
     background-color: white;
     border: none;
@@ -71,15 +71,14 @@ select {
 
 option {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
 }
 
 button {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    size: 1.13em;
+    font-size: 1.13em;
     padding: 1em;
     background-color: inherit;
-    box-shadow: 5px,5px,5px,(0, 0, 0);
     border: none;
     cursor: pointer;
     box-shadow: 0px 0px 20px rgba(0, 128, 255, 0.5);
